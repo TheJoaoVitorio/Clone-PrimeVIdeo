@@ -1,0 +1,116 @@
+:root{
+    --button-background : rgb(26, 152, 255);
+}
+
+.header{
+    margin: 0 auto;
+    width: 100%;
+    /* border: 2px solid wheat; */
+    padding: 0px 26px;
+}
+
+.headerContent{
+    /* border: 2px solid red; */
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerContentLeft{
+    display: flex;
+}
+
+.headerContentRight{
+    display: flex;
+    gap: 8px;
+}
+
+.logoHeader img{
+    width: 90px;
+    height: 20px;
+    border: 1px solid red;
+    margin-right: 18px;
+}
+
+.headerItensContainer{
+    color: aliceblue;
+}
+
+.headerItens{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    border: 1px solid red;
+    height: 20px;
+    gap: 20px;
+}
+
+.headerItens li{
+    font-weight: 700;   
+}
+
+.headerItens li{
+    /* border: 2px solid rebeccapurple; */
+    padding: 8px;
+}
+
+/* .headerItens li:hover{
+    background: rgb(255, 255, 255); 
+    backdrop-filter: blur(10px); 
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    color: #00050D;
+    cursor: pointer;
+} */
+
+.headerItensActive li{
+    border-radius: 8px;
+    background: radial-gradient(50% 50% at 50% 0, rgba(var(--action-background-color,255,255,255),.8) 0, transparent 100%), hsla(0, 0%, 100%, .2);
+    background-origin: border-box;
+    border-image: linear-gradient(90deg, hsla(0, 0%, 100%, 0) 10%, hsla(0, 0%, 100%, .3) 50%, hsla(0, 0%, 100%, 0) 90%) 1 / 2px;
+    border-image-width: 2px 0 0 0;
+    box-shadow: 0 -4px 16px 0 rgba(var(--action-background-color,255,255,255),.2);
+}
+
+.headerLogin{
+    display: flex;
+    gap: 16px;
+}
+
+.avatarContainer{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.changeLanguageButton{
+    border: 2px solid red;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+}
+
+.changeLanguageButtonContent{
+    display: flex;
+    color: #fff;
+}
+
+.avatarLogin {
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    width: 40px;
+}
+
+.buttonLogin{
+    width: 92px;
+    height: 36px;
+    background: var(--button-background);
+    box-shadow: 0 -4px 16px 0 rgba(var(--button-background,255,255,255),.2);
+    font-weight: 500;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+}
