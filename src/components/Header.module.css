@@ -48,7 +48,7 @@
 }
 
 .menuTrigger{
-    display: flex;
+    display: none;
     align-items: center;
     padding: 8px;
     cursor: pointer;
@@ -170,6 +170,10 @@
 }
 
 @media (max-width: 957px) {
+    .menuTrigger{
+        display: flex;
+    }
+
     .headerItens {
         display: none;
     }
