@@ -1,16 +1,14 @@
 :root{
-    --button-background : rgb(26, 152, 255);
+    --button-background: rgb(26, 152, 255);
 }
 
 .header{
     margin: 0 auto;
     width: 100%;
-    /* border: 2px solid wheat; */
     padding: 0px 26px;
 }
 
 .headerContent{
-    /* border: 2px solid red; */
     padding: 12px;
     display: flex;
     justify-content: space-between;
@@ -29,7 +27,6 @@
 .logoHeader img{
     width: 90px;
     height: 20px;
-    /* border   : 1px solid red; */
     margin-right: 18px;
 }
 
@@ -47,61 +44,82 @@
     display: flex;
     align-items: center;
     height: 20px;
+    position: relative;
 }
 
-.headerItemMenuDrop > li{
-    /* border: 2px solid red; */
+.menuTrigger{
     display: flex;
     align-items: center;
     padding: 8px;
+    cursor: pointer;
+    position: relative;
 }
 
-.headerItemMenuDrop li:hover{
-    background: rgb(255, 255, 255); 
-    backdrop-filter: blur(10px); 
+.dropdownContent {
+    display: none;
+    position: absolute;
+    top: 92%;
+    left: 0;
+    /* background: rgba(255, 255, 255, 0.1); */
+    background: rgba(19, 19, 19, 0.95);
+    backdrop-filter: blur(10px);
+    min-width: 200px;
     border-radius: 8px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    color: #00050D;
+    backdrop-filter: blur(20px); /* Efeito de desfoque no fundo */
+    box-shadow: rgb(22, 22, 22) 0px 6px 24px 0px, rgba(28, 28, 28, 0.892) 0px 0px 0px 1px;
+    margin-top: 5px;
+    z-index: 1000;
+}
+
+.dropdownContent ul {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 0;
+}
+
+.dropdownContent li {
+    padding: 12px 16px;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.dropdownContent li:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.menuTrigger:hover .dropdownContent {
+    display: block;
+}
+
+.headerItemMenuDrop > li:hover{
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    color: #fff;
     font-weight: 500;
-    cursor: pointer;
 }
 
 .headerItens{
     display: flex;
     align-items: center;
     list-style: none;
-    /* border: 1px solid red; */
     height: 20px;
     gap: 24px;
 }
 
 .headerItens li{
-    font-weight: 700;   
-}
-
-
-.headerItens li{
-    /* border: 2px solid rebeccapurple; */
+    font-weight: 700;
     padding: 8px;
 }
 
 .headerItens li:hover{
-    background: rgb(255, 255, 255); 
-    backdrop-filter: blur(10px); 
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
     border-radius: 8px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    color: #00050D;
+    color: #fff;
     font-weight: 500;
     cursor: pointer;
-}
-
-.headerItensActive li{
-    border-radius: 8px;
-    background: radial-gradient(50% 50% at 50% 0, rgba(var(--action-background-color,255,255,255),.8) 0, transparent 100%), hsla(0, 0%, 100%, .2);
-    background-origin: border-box;
-    border-image: linear-gradient(90deg, hsla(0, 0%, 100%, 0) 10%, hsla(0, 0%, 100%, .3) 50%, hsla(0, 0%, 100%, 0) 90%) 1 / 2px;
-    border-image-width: 2px 0 0 0;
-    box-shadow: 0 -4px 16px 0 rgba(var(--action-background-color,255,255,255),.2);
 }
 
 .headerLogin{
@@ -144,4 +162,30 @@
     color: #fff;
     border: none;
     border-radius: 8px;
+}
+
+.buttonLogin:hover{
+    box-shadow: 0px 0px 20px 0px rgba(74, 145, 226, 0.815);
+    cursor: pointer;
+}
+
+@media (max-width: 957px) {
+    .headerItens {
+        display: none;
+    }
+
+    .headerContentLeft {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .headerItemMenuDrop {
+        margin: 0 auto;
+    }
+
+    .dropdownContent {
+        left: 50%;
+        transform: translateX(-50%);
+        min-width: 250px;
+    }
 }
