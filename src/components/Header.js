@@ -2,6 +2,7 @@ import styles from './Header.module.css'
 import avatarSvg from '../assets/avatar.svg'
 import menuIco from '../assets/menu.svg'
 import arrowDown from '../assets/arrow-down.svg'
+import { IoIosArrowDown } from "react-icons/io";
 
 export default function Header(){
     return(
@@ -13,12 +14,23 @@ export default function Header(){
                     </div>
 
                     <div className={styles.headerItensContainer} >
-                        <ul className={styles.headerItens} >
-                            <li>Home</li>
-                            <li>Movies</li>
-                            <li>TV Shows</li>
-                            <li>Sports</li>
-                            <li>Live TV</li>
+                        <ul>
+                            <div className={styles.headerItemMenuDrop} >
+                                <li>
+                                    Menu
+                                    <IoIosArrowDown
+                                        size={20}
+                                    />
+                                </li>
+                            </div>
+                            <div className={styles.headerItens} >
+                                <li>Home</li>
+                                <li>Movies</li>
+                                <li>TV Shows</li>
+                                <li>Sports</li>
+                                <li>Live TV</li>
+                            </div>
+                            
                         </ul>
                     </div>
                 </div> 
@@ -34,7 +46,7 @@ export default function Header(){
                     <div className={styles.headerLogin} >
                         <div className={styles.avatarContainer} >
                             <div>
-                                <img src={menuIco} ></img>
+                                <img src={menuIco}></img>
                             </div>
                             <a>
                                 <img

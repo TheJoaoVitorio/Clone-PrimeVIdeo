@@ -29,7 +29,7 @@
 .logoHeader img{
     width: 90px;
     height: 20px;
-    border: 1px solid red;
+    /* border   : 1px solid red; */
     margin-right: 18px;
 }
 
@@ -37,32 +37,63 @@
     color: aliceblue;
 }
 
+.headerItensContainer ul{
+    display: flex;
+    list-style: none;
+}
+
+.headerItemMenuDrop{
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    height: 20px;
+}
+
+.headerItemMenuDrop > li{
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    padding: 8px;
+}
+
+.headerItemMenuDrop li:hover{
+    background: rgb(255, 255, 255); 
+    backdrop-filter: blur(10px); 
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    color: #00050D;
+    font-weight: 500;
+    cursor: pointer;
+}
+
 .headerItens{
     display: flex;
     align-items: center;
     list-style: none;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 20px;
-    gap: 20px;
+    gap: 24px;
 }
 
 .headerItens li{
     font-weight: 700;   
 }
 
+
 .headerItens li{
     /* border: 2px solid rebeccapurple; */
     padding: 8px;
 }
 
-/* .headerItens li:hover{
+.headerItens li:hover{
     background: rgb(255, 255, 255); 
     backdrop-filter: blur(10px); 
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     color: #00050D;
+    font-weight: 500;
     cursor: pointer;
-} */
+}
 
 .headerItensActive li{
     border-radius: 8px;
@@ -109,7 +140,7 @@
     height: 36px;
     background: var(--button-background);
     box-shadow: 0 -4px 16px 0 rgba(var(--button-background,255,255,255),.2);
-    font-weight: 500;
+    font-weight: 600;
     color: #fff;
     border: none;
     border-radius: 8px;
