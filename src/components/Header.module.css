@@ -24,9 +24,15 @@
     gap: 8px;
 }
 
+.logoHeader{
+    /* border: 1px solid red; */
+    padding: 2px;
+}
+
 .logoHeader img{
-    width: 90px;
-    height: 20px;
+    width: 70px;
+    /* height: 20px; */
+    /* padding: 8px; */
     margin-right: 18px;
 }
 
@@ -98,6 +104,16 @@
     border-radius: 8px;
     color: #fff;
     font-weight: 500;
+}
+
+.headerItemMenuDrop li svg {
+    transform: rotate(0deg); 
+    transition: transform 0.3s ease; 
+}
+
+.headerItemMenuDrop li:hover svg {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
 }
 
 .headerItens{
@@ -176,6 +192,11 @@
 
     .headerItens {
         display: none;
+    }
+
+    .menuTrigger svg:hover{
+        transform: rotate(180deg);
+        transition: transform 0.3s ease;
     }
 
     .headerContentLeft {
