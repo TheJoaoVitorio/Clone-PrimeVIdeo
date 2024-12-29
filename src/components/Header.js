@@ -45,7 +45,7 @@ export default function Header(){
                     <div className={styles.changeLanguageButton}>
                         <div className={styles.changeLanguageButtonContent}>
                             EN
-                            <img src={arrowDown} alt="language selector" />
+                            <IoIosArrowDown size={20} />
                             <div className={styles.dropdownContent} id={styles.dropdownlanguages} >
                                 <ul>
                                     <li>Deutsch</li>
@@ -66,6 +66,7 @@ export default function Header(){
                                     <li>Românã</li>
                                     <li>Türkçe</li>
                                     <li>Pyccknñ</li>
+
                                 </ul>
                             </div>
                         </div>

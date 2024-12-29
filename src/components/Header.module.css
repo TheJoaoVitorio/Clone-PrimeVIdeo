@@ -140,10 +140,11 @@
 }
 
 .headerItens li:hover{
-    background: rgba(255, 255, 255, 0.1);
+    /* background: rgba(255, 255, 255, 0.1); */
+    background: #fff;
     backdrop-filter: blur(10px);
     border-radius: 8px;
-    color: #fff;
+    color: #00050D;
     font-weight: 500;
     cursor: pointer;
 }
@@ -160,11 +161,28 @@
 }
 
 .changeLanguageButton{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     border-radius: 8px;
     display: flex;
     align-items: center;
     padding: 8px;
+}
+
+.changeLanguageButton:hover{
+    background: #fff;
+}
+
+.changeLanguageButton:hover .changeLanguageButtonContent {
+    color: #00050D;
+}
+
+.changeLanguageButtonContent svg{
+    transition: transform 0.3s ease;
+}
+
+.changeLanguageButton:hover .changeLanguageButtonContent svg{
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
 }
 
 .changeLanguageButtonContent{
