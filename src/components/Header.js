@@ -19,7 +19,7 @@ export default function Header(){
                                 <li className={styles.menuTrigger}>
                                     Menu
                                     <IoIosArrowDown size={20} />
-                                    <div className={styles.dropdownContent}>
+                                    <div className={styles.dropdownContent} id={styles.dropdownMenu} >
                                         <ul>
                                             <li>Home</li>
                                             <li>Movies</li>
@@ -46,6 +46,28 @@ export default function Header(){
                         <div className={styles.changeLanguageButtonContent}>
                             EN
                             <img src={arrowDown} alt="language selector" />
+                            <div className={styles.dropdownContent} id={styles.dropdownlanguages} >
+                                <ul>
+                                    <li>Deutsch</li>
+                                    <li>English</li>
+                                    <li>Español</li>
+                                    <li>Français</li>
+                                    
+                                </ul>
+                                <ul>
+                                    <li>Italiano</li>
+                                    <li>Nederlands</li>
+                                    <li>Norsk</li>
+                                    <li>Português (Portugal)</li>
+                                    
+                                </ul>
+                                <ul>
+                                    <li>Português (Brasil)</li>
+                                    <li>Românã</li>
+                                    <li>Türkçe</li>
+                                    <li>Pyccknñ</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 
