@@ -87,6 +87,10 @@
     right: 0;
 }
 
+.dropdownContent{
+    display: none;
+}
+
 .dropdownContent ul {
     display: flex;
     flex-direction: column;
@@ -106,6 +110,10 @@
 
 .menuTrigger:hover .dropdownContent {
     display: block;
+}
+
+.changeLanguageButton:hover .dropdownContent{
+    display: flex;
 }
 
 .headerItemMenuDrop > li:hover{
