@@ -83,7 +83,7 @@
 }
 
 #dropdownlanguages{
-    top: 10%;
+    top: 9%;
     right: 0;
 }
 
@@ -165,7 +165,7 @@
 .avatarContainer{
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 26px;
 }
 
 .changeLanguageButton{
@@ -220,6 +220,33 @@
     box-shadow: 0px 0px 20px 0px rgba(74, 145, 226, 0.815);
     cursor: pointer;
 }
+
+.menuGridContainer{
+    /* border:  1px solid red; */
+    border-radius: 80%;
+    width: 40px;
+    padding: 6px 6px 6px 5px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.menuGridContainer a{
+    color: white;
+}
+
+.menuGridContainer:hover{
+    cursor: pointer;
+    border: none;
+    background: #fff;
+    color: #00050D;
+}
+
+.menuGridContainer:hover svg{
+    color: #00050D;
+}
+
+
 
 @media (max-width: 957px) {
     .menuTrigger{
